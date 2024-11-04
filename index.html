@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <title>Currency converter</title>
     <link rel="stylesheet" href="./styles/main.css">
 </head>
+
 <body>
     <section class="converter">
         <div class="logo"></div>
@@ -14,25 +16,25 @@
             <p>CURRENCY CONVERTER</p>
         </div>
         <div class="amount">
-            <p>Enter amount</p>
-            <input type="number" name="rate" class="rate">
+            <label for="rate">Enter amount</label>
+            <input type="number" name="rate" class="rate" placeholder="Amount">
         </div>
         <div class="select">
             <div class="country">
-                <p>From</p>
+                <label for="currencyFrom">From</label>
                 <select class="filter" name="currencyFrom"></select>
             </div>
             <div class="country">
-                <p>To</p>
+                <label for="currencyTo">To</label>
                 <select class="filter" name="currencyTo"></select>
             </div>
         </div>
-        <button class="exchange">Get Exchange Rate</button>
+        <button class="exchange">Convert</button>
         <div class="result">
-            <input type="text" name="outcome">
+            <div id="outcome" class="outcome">Result</div>
         </div>
     </section>
-
     <script src="./scripts/main.js"></script>
 </body>
+
 </html>
